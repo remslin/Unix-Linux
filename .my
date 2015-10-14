@@ -1,0 +1,31 @@
+######################################
+## Personal Setting                 ##
+## Rex(Tzu-Chin) Lin                ##
+######################################
+
+set prompt="%{\033[35m%}%m:%{\033[36m%}%/%{\033[0m%}>"
+
+alias ll ls -lh --color
+alias h history 100
+
+alias gvi gvim
+
+alias sourcehome source ~/.my
+alias sourceHome source ~/.my
+
+alias vicshrc gvi ~/.cshrc
+alias vimy gvi ~/.my
+alias vivi gvi ~/.vimrc
+
+alias tarhelp 'echo "pack : tar -jcvf [tar_file] [source_files]"; echo "unpack : tar -jxvf [tar_file] -C [extract_dir]"; echo "check : tar -jtvf [tart_file]";'
+
+alias findf find . -name
+
+alias grepc   'find . -regex ".*\.\(c\|cpp\)" | xargs grep -nH --color=auto \!:1'
+alias greph   'find . -regex ".*\.\(h\|hpp\)" | xargs grep -nH --color=auto \!:1'
+alias grepall 'find . -regex ".*\.\(c\|cpp\|h\|hpp\)" | xargs grep -nH --color=auto \!:1'
+
+alias mcd 'mkdir \!:1; cd \!:1;'
+
+alias buildtag 'ctags -R --c++-kinds=+p --fields=+iaS --extra=+q -f \!:1 --language-force=c++ \!:2/*' 
+
